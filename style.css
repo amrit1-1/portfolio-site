@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "Blue Cashews";
+    src: url('./fonts/blue_cashews-webfont.woff2') format('woff2'),
+         url('./fonts/blue_cashews-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ 
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-width: 5px;
+    margin: 15px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(250, 177, 225), rgb(234, 230, 167), rgb(203, 223, 189), rgb(168, 186, 188)) 1;
+    transition: 1s;
+    margin-top: 60px;
+}
+
+p {
+    font-size: large;
+}
+
+.initials {
+    font-family: "Blue Cashews";
+    float: right;
+    font-size: 40px;
+    top: 0;
+    margin: 0;
+    margin-top: 7px;
+    margin-right: 15px;
+}
+
+.name {
+    letter-spacing: 1px;
+    font-size: 300%;
+    margin-top: 90px;
+    font-family: "Blue Cashews";
+    text-align: center;
+}
+
+.sub-heading {
+    background-image: linear-gradient(to right, rgb(250, 177, 225), rgb(234, 230, 167), rgb(203, 223, 189), rgb(168, 186, 188));
+    padding: 10px;
+    padding-top: 15px;
+    margin-bottom: 50px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-family: "Blue Cashews";
+    text-align: center;
+}
+
+.description {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    transition: 1s;
+}
+
+.dark-mode nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 6px;
+}
+
+nav li {
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    padding-top: 20px;
+    text-decoration: none;
+    font-family: "Blue Cashews";
+    font-size: large;
+    font-weight: 15px;
+    transition: 1s;
+}
+
+nav a:hover {
+    font-size: 20px;
+    transition: 1s;
+}
+
+.home-title {
+    color: rgb(250, 177, 225);
+}
+
+.about-title {
+    color: rgb(234, 227, 122);
+}
+
+.projects-title {
+    color: rgb(153, 186, 130);
+}
+
+.contact-title {
+    color: rgb(122, 157, 161);
+}
+
+.a-title {
+    font-family: "Blue Cashews";
+    text-align: center;
+    color: rgb(234, 227, 122);
+    font-size: xx-large;
+}
+
+.p-title {
+    font-family: "Blue Cashews";
+    text-align: center;
+    color: rgb(153, 186, 130);
+    font-size: xx-large;
+}
+
+.c-title {
+    font-family: "Blue Cashews";
+    text-align: center;
+    color: rgb(122, 157, 161);
+    font-size: xx-large;
+}
+
+.project-link {
+    display: table-cell;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(203, 223, 189);
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: small;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+  
+.project-link:hover {
+    background-color: rgb(153, 186, 130);
+}
+  
+.project-title {
+    font-family: "Blue Cashews" !important;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    display: inline-block;
+    position: relative;
+    color: rgb(153, 186, 130);
+    font-size: x-large;
+}
+  
+.project-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(153, 186, 130);
+    transform-origin: bottom left;
+    transition: transform 0.75s ease-out;
+}
+  
+.project-title:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+.projects {
+    text-align: left;
+    border: 3px solid rgb(203, 223, 189);
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+.section {
+    padding: 20px;
+}
+
+.portrait {
+    height: 250px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.night-mode-button {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 1000;
+    background-color:unset;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#mode-icon {
+    width: 50px;
+    height: 50px;
+    transition: 1s ease;
+}
+
+#mode-icon:hover {
+    height: 55px;
+    width: 55px;
+}
+
+.icon {
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    transition: 1s ease;
+}
+  
+.icon:hover {
+    height: 40px;
+}
+
+.icon-section {
+    text-align: center;
+}
+  
+.dark-mode {
+    background-color: black;
+    color: white;
+}
